@@ -11,6 +11,9 @@ function multiplicacion(a, b) {
 }
 
 function division(a, b) {
+    if (b === 0) {
+        throw new RangeError("No se puede dividir entre cero");
+    }
     return a / b;
 }
 
